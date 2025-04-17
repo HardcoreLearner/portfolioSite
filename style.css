@@ -1,0 +1,634 @@
+:root {
+    --cl1: #FFFFFF;
+    --cl2: #ADD8E6;
+    --cl3: #00008B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid teal;
+    padding: 20px 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    width: 400px;
+}
+
+header ul a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#hero {
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+#hero #text {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 200px;
+    gap: 15px;
+    text-align: left;
+}
+
+#hero #text h2 {
+    color: var(--cl3);
+    font-size: 1.5rem;
+}
+
+#hero #text h1 {
+    color: black;
+    font-size: 4rem;
+}
+
+#hero #text .btnHeroHolder {
+    display: flex;
+    gap: 10px;
+}
+
+#hero #text .btnHeroHolder button {
+    padding: 30px 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
+#aboutMe {
+    background-color: var(--cl3);
+    color: white;    
+}
+
+#contactMe {
+    background-color: white;
+    color: black;
+}
+
+#hero #heroPhoto {
+    height: 100%;
+    background-color: var(--cl2);
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroPhoto img {
+    margin-top: auto;
+    height: 90%;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolioSection {
+    background-color: var(--cl1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sectionTitle {
+    margin: 60px;
+    font-size: 4rem;
+}
+
+#portfolioSection .sectionTitle {
+    color: black;
+}
+
+#portfolio {
+    width: 100%;
+}
+
+.portfolioCard {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.portfolioImg {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.portfolioImg:nth-child(even) img {
+    border: 1px solid var(--cl2);
+    height: 360px;
+    margin: 0;
+    max-width: 800px;
+    padding: 0;
+    width: 100%;
+}
+
+.portfolioImg:nth-child(odd) img {
+    border: 1px solid var(--cl3);
+    height: 360px;
+    margin: 0;
+    max-width: 800px;
+    padding: 0;
+    width: 100%;
+}
+
+.left {
+    box-shadow: 120px -20px var(--cl3);
+}
+
+.right {
+    box-shadow: -120px -20px var(--cl2);
+}
+
+.portfolioInfo {
+    background-color: black;
+    color: white;
+    height: 100%;
+    max-width: 300px;
+    padding: 20px;
+    width: 40%;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+}
+
+.projectDescr {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.infoBtn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.projectButton {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 12px 8px;
+    font-weight: bold;
+}
+
+.button1 {
+    background: var(--cl1);
+    color: var(--cl3);
+}
+
+.button2 {
+    background-color: var(--cl3);
+    color: var(--cl1);
+}
+
+.projectButton a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+#aboutContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#aboutText {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    font-size: 1.35rem;
+    background-color: white;
+}
+
+.skillHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.skillHolder h2 {
+    font-size: 2rem;
+}
+
+#skillContainer {
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+i {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.skillItem p {
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--cl3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+.footerContent {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contactForm form input {
+    width: 48%;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px;
+}
+
+.contactForm form textarea {
+    width: 99%;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px;
+}
+
+.contactForm form button {
+    height: 50px;
+    font-size: 1.4rem;
+    border: 0;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #ADD8E6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contactForm h2, .footerText h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: var(--cl2);
+    font-weight: bold;
+}
+
+.footerText {
+    width: 30%;
+}
+
+.footerText h2 {
+    margin-bottom: 100px;
+}
+
+.footerText .socials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.socialItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.socialItem i {
+    font-size: 5rem;
+    color: white;
+}
+
+.socialItem p {
+    font-size: 1.6rem;
+}
+
+.copy {
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1540px) {
+    
+    #hero #text {
+        margin-left: 100px;
+    }
+
+    .contactForm form input {
+        width: 47%;
+    }
+    
+    .left {
+        box-shadow: unset;
+    }
+    
+    .right {
+        box-shadow: unset;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Tablet */
+    #heroPhoto img {
+        margin-top: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #hero #text {
+        margin-left: unset;
+        padding: 30px;
+    }
+
+    #hero #text .btnHeroHolder button {
+        padding: 15px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .portfolioCard {
+        width: unset;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 60px;
+    }
+
+    .portfolioInfo {
+        max-width: 350px;
+        width: 45%;
+    }
+
+    .portfolioImg:nth-child(even) img {
+        border: 1px solid var(--cl2);
+        height: unset;
+        max-width: unset;
+    }
+    
+    .portfolioImg:nth-child(odd) img {
+        border: 1px solid var(--cl3);
+        height: unset;
+        max-width: unset;
+    }
+
+    .left {
+        box-shadow: unset;
+    }
+    
+    .right {
+        box-shadow: unset;
+    }
+
+    #aboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #aboutText {
+        width: 80%;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .skillHolder {
+        width: 80%;
+    }
+
+    .skillHolder h2 {
+        margin-top: 15px;
+    }
+
+    .contactForm form input {
+        width: 97%;
+    }
+    
+    .contactForm form textarea {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile */
+
+    header {
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    header h1 {
+        text-align: unset;
+        font-size: 1.3rem;
+        margin-left: unset;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: unset;
+        margin-right: unset;
+        width: unset;
+        gap: 8px;
+    }
+
+    #hero {
+        min-height: 500px;
+    }
+
+    #hero #text {
+        padding: 10px;
+        margin-left: unset;
+    }
+    
+    #hero #text h2 {
+        color: var(--cl3);
+        font-size: 1.2rem;
+    }
+    
+    #hero #text h1 {
+        color: black;
+        font-size: 1.8rem;
+    }
+    
+    #hero #text .btnHeroHolder {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+    .portfolioCard {
+        width: unset;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .reverse .portfolioCard {
+        flex-direction: column-reverse;
+    }
+
+    .portfolioInfo {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .projectTitle {
+        text-align: center;
+    }
+
+    .skillHolder {
+        width: 100%;
+    }
+    
+
+    #aboutText {
+        width: 90%;
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footerContent {
+        width: unset;
+        padding: unset;
+        flex-direction: column;
+    }
+    
+    .contactForm h2, .footerText h2 {
+        text-align: center;
+    }
+
+    .footerText h2 {
+        margin-bottom: unset;
+    }
+
+    .contactForm form {
+        width: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerText {
+        width: 100%;
+    }
+
+    .footerText .socials {
+        align-items: center;
+    }
+
+    .copy {
+        font-size: 1.1rem;
+    }
+}
